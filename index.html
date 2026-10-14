@@ -3,490 +3,897 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>質問するほど就活が有利になる！「自分ならでは」の質問リスト｜AIエンジニア キャリアイベント</title>
-  <!-- Google Fonts: Zen Kaku Gothic New -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['"Zen Kaku Gothic New"', 'sans-serif'],
-          },
-          colors: {
-            brand: {
-              50: '#f0fdfa',
-              100: '#ccfbf1',
-              500: '#14b8a6',
-              600: '#0d9488',
-              700: '#0f766e',
-            },
-            accent: {
-              50: '#fffbeb',
-              100: '#fef3c7',
-              500: '#f59e0b',
-            }
-          }
-        }
-      }
-    }
-  </script>
+  <title>●月●日開催 ●●イベント | 質問ヒント集</title>
   <style>
+    :root {
+      --header-bg-gradient: linear-gradient(135deg, #1565c0, #0d47a1);
+      --primary-color: #1976d2;
+      --primary-dark: #0d47a1;
+      --primary-light: #e3f2fd;
+      --text-dark: #222222;
+      --text-muted: #555555;
+      --bg-light: #f4f7f9;
+      --card-bg: #ffffff;
+      --border-color: #d0d7de;
+    }
+
     body {
-      font-family: 'Zen Kaku Gothic New', sans-serif;
-      -webkit-tap-highlight-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      width: 100%;
+      text-align: left;
     }
-    .accordion-content {
-      transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+
+    /* 1. 画面横いっぱいに広がるヘッダーエリア */
+    .header-banner {
+      width: 100%;
+      background: var(--header-bg-gradient);
+      color: #ffffff;
+      padding: 48px 0;
+      box-shadow: 0 4px 20px rgba(13, 71, 161, 0.15);
+      margin-bottom: 36px;
+      box-sizing: border-box;
+      text-align: left;
     }
-    /* コピートーストのアニメーション */
-    @keyframes toastFade {
-      0% { opacity: 0; transform: translate(-50%, 20px) scale(0.95); }
-      15% { opacity: 1; transform: translate(-50%, 0) scale(1); }
-      85% { opacity: 1; transform: translate(-50%, 0) scale(1); }
-      100% { opacity: 0; transform: translate(-50%, -10px) scale(0.95); }
+
+    .header-inner {
+      width: 100%;
+      padding: 0 40px;
+      box-sizing: border-box;
+      text-align: left;
     }
-    .toast-active {
-      animation: toastFade 2.2s forwards;
+
+    .event-tag {
+      display: inline-block;
+      background: #ffe082;
+      color: #0d47a1;
+      padding: 6px 20px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      font-weight: bold;
+      margin-bottom: 16px;
+      letter-spacing: 0.05em;
+    }
+
+    .main-title {
+      font-size: 2.3rem;
+      font-weight: 800;
+      margin: 0 0 24px 0;
+      line-height: 1.35;
+      letter-spacing: 0.02em;
+      text-align: left;
+    }
+
+    .title-underline {
+      text-decoration: underline;
+      text-underline-offset: 8px;
+      text-decoration-color: #ffe082;
+    }
+
+    .info-box {
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      padding: 24px 32px;
+      margin-bottom: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+    .info-title {
+      font-weight: bold;
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+      color: #fffde7;
+      text-align: left;
+    }
+
+    .info-desc {
+      font-size: 1rem;
+      margin: 0;
+      opacity: 0.95;
+      line-height: 1.75;
+      text-align: left;
+    }
+
+    .advice-box {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      padding: 18px 24px;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: left;
+      border-left: 4px solid #ffe082;
+    }
+
+    /* 2. メインコンテンツ */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px 120px 40px;
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+    .filter-section {
+      margin-bottom: 32px;
+      text-align: left;
+    }
+
+    .filter-label {
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-weight: bold;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
+    .filter-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: flex-start;
+    }
+
+    .tag-btn {
+      background: #ffffff;
+      color: #444444;
+      border: 1px solid var(--border-color);
+      padding: 9px 20px;
+      border-radius: 24px;
+      font-size: 0.92rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tag-btn.active, .tag-btn:hover {
+      background: var(--primary-color);
+      color: #ffffff;
+      border-color: var(--primary-color);
+      box-shadow: 0 2px 10px rgba(25, 118, 210, 0.25);
+    }
+
+    .card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: left;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      overflow: hidden;
+      transition: all 0.2s ease;
+      text-align: left;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      border-color: #bbdefb;
+    }
+
+    .card-header {
+      padding: 22px 32px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      cursor: pointer;
+      user-select: none;
+      background: #ffffff;
+      transition: background-color 0.2s ease;
+      text-align: left;
+    }
+
+    .card-header:hover {
+      background-color: #f9fbfd;
+    }
+
+    .indicator-box {
+      width: 10px;
+      height: 10px;
+      background: var(--primary-color);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .card-header-info {
+      flex: 1;
+      text-align: left;
+    }
+
+    .category-badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-size: 0.8rem;
+      font-weight: bold;
+      padding: 3px 12px;
+      border-radius: 12px;
+      margin-bottom: 6px;
+    }
+
+    .category-badge.priority {
+      background: #ffe082;
+      color: #0d47a1;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0;
+      color: var(--text-dark);
+      text-align: left;
+    }
+
+    .arrow-icon {
+      font-size: 0.85rem;
+      color: #888888;
+      transition: transform 0.25s ease;
+      font-weight: bold;
+    }
+
+    details[open] .arrow-icon {
+      transform: rotate(180deg);
+    }
+
+    .card-body {
+      padding: 0 32px 32px 32px;
+      border-top: 1px solid #f0f0f0;
+      background: #ffffff;
+      text-align: left;
+    }
+
+    .sub-section {
+      margin-top: 24px;
+      text-align: left;
+    }
+
+    .sub-title {
+      font-size: 1.05rem;
+      color: var(--primary-dark);
+      margin-bottom: 14px;
+      font-weight: bold;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 12px;
+      text-align: left;
+    }
+
+    .question-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+
+    .question-item {
+      padding: 12px 16px;
+      margin-bottom: 8px;
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      font-size: 0.98rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+      cursor: pointer;
+      user-select: none;
+      text-align: left;
+    }
+
+    .question-item:hover {
+      background-color: #f0f7ff;
+      border-color: #bbdefb;
+    }
+
+    .question-item.selected {
+      background-color: #e3f2fd;
+      border-color: #90caf9;
+    }
+
+    .question-item input[type="checkbox"] {
+      margin-top: 4px;
+      width: 18px;
+      height: 18px;
+      accent-color: var(--primary-color);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .question-num {
+      color: var(--primary-color);
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .question-text {
+      flex: 1;
+      text-align: left;
+    }
+
+    /* 3. 固定コピーバー */
+    .copy-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.12);
+      border-top: 1px solid #e0e0e0;
+      padding: 14px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-sizing: border-box;
+    }
+
+    .copy-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .selected-count {
+      font-size: 1.05rem;
+      color: var(--text-dark);
+    }
+
+    .selected-count strong {
+      color: var(--primary-dark);
+      font-size: 1.2rem;
+    }
+
+    .action-buttons {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .clear-btn {
+      background: #f5f5f5;
+      color: #666666;
+      border: 1px solid #cccccc;
+      padding: 10px 20px;
+      border-radius: 24px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .clear-btn:hover {
+      background: #e0e0e0;
+      color: #333333;
+    }
+
+    .copy-btn {
+      background-color: var(--primary-color);
+      color: #ffffff;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 24px;
+      font-weight: bold;
+      font-size: 0.95rem;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3);
+      transition: background-color 0.2s ease;
+    }
+
+    .copy-btn:hover {
+      background-color: var(--primary-dark);
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+<body>
 
-  <!-- 画面幅いっぱいにフィットするフルスクリーンコンテナ -->
-  <main class="w-full min-h-screen bg-white flex flex-col overflow-hidden">
+  <!-- 全幅ブルーヘッダーエリア -->
+  <div class="header-banner">
+    <div class="header-inner">
+      <div class="event-tag">●月●日開催 ●●イベント</div>
+      <h1 class="main-title">
+        質問するほど自分をアピールできる！<br>
+        <span class="title-underline">企業理解が深まる「質問ヒント」集</span>
+      </h1>
 
-    <!-- ヘッダーエリア（画面横幅いっぱい） -->
-    <header class="w-full bg-gradient-to-br from-teal-500 via-teal-600 to-emerald-600 text-white px-4 sm:px-8 lg:px-12 pt-8 pb-8 shadow-sm relative overflow-hidden">
-      <!-- 背景のアクセントサークル -->
-      <div class="absolute -right-8 -bottom-10 w-48 h-48 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
-      <div class="absolute -left-6 -top-6 w-36 h-36 bg-emerald-400/20 rounded-full blur-lg pointer-events-none"></div>
-
-      <div class="relative z-10 w-full">
-        <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/20 backdrop-blur-sm text-xs sm:text-sm font-semibold tracking-wide mb-3">
-          <i class="fa-solid fa-sparkles text-amber-300"></i>
-          <span>9月30日(水)開催 AIエンジニア キャリアイベント</span>
-        </div>
-        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black leading-snug tracking-tight">
-          質問するほど就活が有利になる！ <span class="text-amber-200 underline decoration-amber-300/60 decoration-4 underline-offset-4">「自分ならでは」の質問リスト</span>
-        </h1>
-        
-        <div class="mt-5 bg-white/15 backdrop-blur-sm rounded-2xl p-4 sm:p-5 border border-white/20 text-xs sm:text-sm leading-relaxed text-teal-50 w-full">
-          <p class="font-bold text-sm sm:text-base flex items-center gap-2 text-amber-200 mb-1.5">
-            <i class="fa-regular fa-lightbulb text-amber-300"></i>
-            なぜ今、質問すべきなの？
-          </p>
-          <p class="mb-2">
-            全体説明では聞けない<strong class="text-white">「生の声・現場のリアル」</strong>を知るチャンス！<br>
-            自分の興味や専攻を交えて質問すれば、志望企業へのアピールになるのはもちろん、どんな企業への質問でも「自分の就活の軸」を深め、新しい視野を広げるきっかけになります。
-          </p>
-          <p class="text-teal-100 bg-white/10 p-2.5 rounded-xl border border-white/10">
-            💡 「シートのこの質問が気になったのですが…」とそのまま聞くだけでOK！せっかくの限られた時間です。ぜひこの機会を<strong class="text-amber-200">自分の就活のために役立ててみてください！</strong>
-          </p>
-        </div>
+      <div class="info-box">
+        <div class="info-title">せっかくの限られた時間、自分にとって有意義な時間にしよう！</div>
+        <p class="info-desc">
+          全体説明では聞けない「生の雰囲気」を知るだけでなく、自分の専攻や強みを交えて質問することで、企業の方に好印象を残すアピールのチャンスにもなります！<br>
+          「何を質問すればいいか迷う…」という時も、このシートから自分に合いそうな質問を選ぶだけでOKです。
+        </p>
       </div>
-    </header>
 
-    <!-- カテゴリフィルター -->
-    <nav class="w-full px-4 sm:px-8 lg:px-12 pt-6 pb-4 border-b border-slate-100 bg-white">
-      <p class="text-xs font-bold text-slate-500 mb-3 flex items-center gap-1.5">
-        <i class="fa-solid fa-sliders text-teal-600"></i> 気になるジャンルで絞り込む
-      </p>
-      <div class="flex flex-wrap gap-2 text-xs sm:text-sm font-semibold">
-        <button onclick="filterCategory('all', this)" class="filter-btn px-4 py-2 rounded-full bg-teal-600 text-white shadow-sm transition-all">
-          すべて
-        </button>
-        <button onclick="filterCategory('skill', this)" class="filter-btn px-4 py-2 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all">
-          専攻・スキル
-        </button>
-        <button onclick="filterCategory('company', this)" class="filter-btn px-4 py-2 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all">
-          会社選び・入社決め手
-        </button>
-        <button onclick="filterCategory('work', this)" class="filter-btn px-4 py-2 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all">
-          業務内容
-        </button>
-        <button onclick="filterCategory('career', this)" class="filter-btn px-4 py-2 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all">
-          選考・キャリア
-        </button>
-        <button onclick="filterCategory('style', this)" class="filter-btn px-4 py-2 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all">
-          働き方
-        </button>
+      <div class="advice-box">
+        <strong>好印象を与える！話しかけ方のワンポイント</strong><br>
+        「自分の背景＋気になる質問」のセットで聞くのがコツです！<br>
+        <em>例：「〇〇専攻で〜〜の研究をしているのですが、シートにあるこの質問について実際の現場ではどうですか？」</em>と伝えると、より具体的で深い話が聞けます！<br>
+        <strong>ちなみに、チャットで質問を受け付けるときは、気になる質問にチェックを入れて「選択した質問をコピー」し、チャットにそのまま送信して使用するのもおすすめです！</strong>
       </div>
-    </nav>
+    </div>
+  </div>
 
-    <!-- テーマカード一覧（1列縦並び layout） -->
-    <section class="w-full px-4 sm:px-8 lg:px-12 py-6 flex-1 flex flex-col gap-4" id="cardList">
+  <!-- メインコンテンツ -->
+  <div class="container">
 
-      <!-- CARD 1: 専攻・スキル -->
-      <article class="theme-card w-full bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-teal-300 transition-all overflow-hidden" data-category="skill">
-        <button onclick="toggleCard(this)" class="w-full text-left p-5 flex items-center justify-between gap-3 focus:outline-none hover:bg-slate-50/50 transition-colors">
-          <div class="flex items-center gap-3.5">
-            <span class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg shrink-0 border border-teal-100">
-              🎓
-            </span>
-            <div>
-              <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-md inline-block mb-1">専攻・スキル</span>
-              <h2 class="text-base sm:text-lg font-bold text-slate-800 leading-snug">
-                「未経験や他分野でも大丈夫？」
-              </h2>
-            </div>
-          </div>
-          <span class="chevron-icon text-slate-400 text-sm transition-transform duration-200 shrink-0">
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
-        </button>
-
-        <!-- 初期状態：閉じた状態 (hidden) -->
-        <div class="accordion-content hidden px-5 pb-5 pt-2 border-t border-slate-100 bg-slate-50/30">
-          <p class="text-xs font-bold text-slate-500 mb-2.5 flex items-center gap-1">
-            <i class="fa-regular fa-comment-dots text-teal-600"></i> おすすめの質問フレーズ
-          </p>
-          <div class="space-y-2.5">
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                専攻外出身者は、入社後どんな仕事からスタートしていますか？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all" title="質問をコピー">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                大学での研究経験や専門知識は、実際の開発や業務でどう役立っていますか？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all" title="質問をコピー">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                入社までに勉強しておくと安心なスキルは何ですか？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all" title="質問をコピー">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- CARD 2: 会社選び・入社決め手 -->
-      <article class="theme-card w-full bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-teal-300 transition-all overflow-hidden" data-category="company">
-        <button onclick="toggleCard(this)" class="w-full text-left p-5 flex items-center justify-between gap-3 focus:outline-none hover:bg-slate-50/50 transition-colors">
-          <div class="flex items-center gap-3.5">
-            <span class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg shrink-0 border border-teal-100">
-              🏢
-            </span>
-            <div>
-              <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-md inline-block mb-1">会社選び・入社の決め手</span>
-              <h2 class="text-base sm:text-lg font-bold text-slate-800 leading-snug">
-                「他社との違いや選んだ理由は？」
-              </h2>
-            </div>
-          </div>
-          <span class="chevron-icon text-slate-400 text-sm transition-transform duration-200 shrink-0">
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
-        </button>
-
-        <div class="accordion-content hidden px-5 pb-5 pt-2 border-t border-slate-100 bg-slate-50/30">
-          <p class="text-xs font-bold text-slate-500 mb-2.5 flex items-center gap-1">
-            <i class="fa-regular fa-comment-dots text-teal-600"></i> おすすめの質問フレーズ
-          </p>
-          <div class="space-y-2.5">
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                他社と比べたとき、「これだけは負けない！」という強みや魅力は何ですか？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                最終的にこの会社を選んだ一番の決め手は？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                こういう価値観やタイプの方は、特に社風に合うと感じるのはどんな人ですか？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- CARD 3: 業務内容 -->
-      <article class="theme-card w-full bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-teal-300 transition-all overflow-hidden" data-category="work">
-        <button onclick="toggleCard(this)" class="w-full text-left p-5 flex items-center justify-between gap-3 focus:outline-none hover:bg-slate-50/50 transition-colors">
-          <div class="flex items-center gap-3.5">
-            <span class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg shrink-0 border border-teal-100">
-              💻
-            </span>
-            <div>
-              <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-md inline-block mb-1">業務内容</span>
-              <h2 class="text-base sm:text-lg font-bold text-slate-800 leading-snug">
-                「実際どんな仕事？ 大変？」
-              </h2>
-            </div>
-          </div>
-          <span class="chevron-icon text-slate-400 text-sm transition-transform duration-200 shrink-0">
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
-        </button>
-
-        <div class="accordion-content hidden px-5 pb-5 pt-2 border-t border-slate-100 bg-slate-50/30">
-          <p class="text-xs font-bold text-slate-500 mb-2.5 flex items-center gap-1">
-            <i class="fa-regular fa-comment-dots text-teal-600"></i> おすすめの質問フレーズ
-          </p>
-          <div class="space-y-2.5">
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                普段はどんな案件に関わり、どういう流れで開発していますか？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                仕事をしていて一番「面白い！やりがいがある！」と感じる瞬間は？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                今までで一番苦労したプロジェクトと、それをどう乗り越えましたか？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- CARD 4: 選考・キャリア -->
-      <article class="theme-card w-full bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-teal-300 transition-all overflow-hidden" data-category="career">
-        <button onclick="toggleCard(this)" class="w-full text-left p-5 flex items-center justify-between gap-3 focus:outline-none hover:bg-slate-50/50 transition-colors">
-          <div class="flex items-center gap-3.5">
-            <span class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg shrink-0 border border-teal-100">
-              🎯
-            </span>
-            <div>
-              <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-md inline-block mb-1">選考・キャリア</span>
-              <h2 class="text-base sm:text-lg font-bold text-slate-800 leading-snug">
-                「どんな学生と一緒に働きたい？」
-              </h2>
-            </div>
-          </div>
-          <span class="chevron-icon text-slate-400 text-sm transition-transform duration-200 shrink-0">
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
-        </button>
-
-        <div class="accordion-content hidden px-5 pb-5 pt-2 border-t border-slate-100 bg-slate-50/30">
-          <p class="text-xs font-bold text-slate-500 mb-2.5 flex items-center gap-1">
-            <i class="fa-regular fa-comment-dots text-teal-600"></i> おすすめの質問フレーズ
-          </p>
-          <div class="space-y-2.5">
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                面接などで「この人と一緒に働きたい！」と感じる学生の共通点はありますか？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                技術力以外に、面接や仕事で重視される資質は何ですか？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                面接で研究内容を話すとき、どの深さまで話すべきですか？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- CARD 5: 働き方 -->
-      <article class="theme-card w-full bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-teal-300 transition-all overflow-hidden" data-category="style">
-        <button onclick="toggleCard(this)" class="w-full text-left p-5 flex items-center justify-between gap-3 focus:outline-none hover:bg-slate-50/50 transition-colors">
-          <div class="flex items-center gap-3.5">
-            <span class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg shrink-0 border border-teal-100">
-              🤝
-            </span>
-            <div>
-              <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-md inline-block mb-1">働き方</span>
-              <h2 class="text-base sm:text-lg font-bold text-slate-800 leading-snug">
-                「現場の雰囲気や環境はどう？」
-              </h2>
-            </div>
-          </div>
-          <span class="chevron-icon text-slate-400 text-sm transition-transform duration-200 shrink-0">
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
-        </button>
-
-        <div class="accordion-content hidden px-5 pb-5 pt-2 border-t border-slate-100 bg-slate-50/30">
-          <p class="text-xs font-bold text-slate-500 mb-2.5 flex items-center gap-1">
-            <i class="fa-regular fa-comment-dots text-teal-600"></i> おすすめの質問フレーズ
-          </p>
-          <div class="space-y-2.5">
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                困った時、先輩や上司にはどんな雰囲気で相談できますか？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                リモートと出社、実際の働き方や残業が多い時期の乗り越え方はどんな感じですか？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-                入社後の配属先（研究テーマや参加プロジェクト）は本人の希望が通りますか？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- CARD 6: 〇〇 (自由記入枠) -->
-      <article class="theme-card w-full bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-teal-300 transition-all overflow-hidden" data-category="all">
-        <button onclick="toggleCard(this)" class="w-full text-left p-5 flex items-center justify-between gap-3 focus:outline-none hover:bg-slate-50/50 transition-colors">
-          <div class="flex items-center gap-3.5">
-            <span class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg shrink-0 border border-teal-100">
-              ✏️
-            </span>
-            <div>
-              <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-md inline-block mb-1">オリジナルのテーマ</span>
-              <h2 class="text-base sm:text-lg font-bold text-slate-800 leading-snug">
-                「〇〇？」
-              </h2>
-            </div>
-          </div>
-          <span class="chevron-icon text-slate-400 text-sm transition-transform duration-200 shrink-0">
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
-        </button>
-
-        <div class="accordion-content hidden px-5 pb-5 pt-2 border-t border-slate-100 bg-slate-50/30">
-          <p class="text-xs font-bold text-slate-500 mb-2.5 flex items-center gap-1">
-            <i class="fa-regular fa-comment-dots text-teal-600"></i> メモ・自分ならではの自由質問枠
-          </p>
-          <div class="space-y-2.5">
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-400 italic leading-relaxed">
-                ？ (ここに自分独自の質問をメモしてみましょう)
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-400 italic leading-relaxed">
-                ？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-            <div class="question-box bg-white border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3 shadow-xs">
-              <p class="text-xs sm:text-sm font-medium text-slate-400 italic leading-relaxed">
-                ？
-              </p>
-              <button onclick="copyQuestion(this)" class="copy-btn shrink-0 text-slate-400 hover:text-teal-600 text-xs px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 active:scale-95 transition-all">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </article>
-
-    </section>
-
-    <!-- フッター -->
-    <footer class="w-full p-8 text-center text-xs sm:text-sm text-slate-400 bg-slate-50 border-t border-slate-100 mt-auto">
-      <div class="w-12 h-1 bg-slate-200 rounded-full mx-auto mb-4"></div>
-      <p class="font-medium text-slate-600 mb-1">気になるテーマは見つかりましたか？</p>
-      <p class="leading-relaxed">質問はメモしなくても、<i class="fa-regular fa-copy text-teal-600"></i> ボタンでコピーできます。<br class="hidden sm:inline">今日の出会いを楽しんでくださいね！</p>
-    </footer>
-
-    <!-- コピー完了トースト通知 -->
-    <div id="copyToast" class="fixed bottom-8 left-1/2 -translate-x-1/2 bg-slate-900/90 backdrop-blur text-white px-5 py-3 rounded-full text-xs sm:text-sm font-bold flex items-center gap-2 shadow-2xl opacity-0 pointer-events-none z-50 transition-all">
-      <i class="fa-solid fa-circle-check text-emerald-400"></i>
-      <span>質問をコピーしました！</span>
+    <!-- フィルタタブ -->
+    <div class="filter-section">
+      <div class="filter-label">気になるジャンルで絞り込む</div>
+      <div class="filter-tags">
+        <button class="tag-btn active" onclick="filterCards('all', event)">すべて</button>
+        <button class="tag-btn" onclick="filterCards('cat0', event)">イベント限定質問</button>
+        <button class="tag-btn" onclick="filterCards('cat1', event)">専攻・スキル</button>
+        <button class="tag-btn" onclick="filterCards('cat2', event)">会社選び・入社決め手</button>
+        <button class="tag-btn" onclick="filterCards('cat3', event)">業務内容・働き方</button>
+        <button class="tag-btn" onclick="filterCards('cat4', event)">選考・キャリア</button>
+        <button class="tag-btn" onclick="filterCards('cat5', event)">技術・研究環境</button>
+        <button class="tag-btn" onclick="filterCards('cat6a', event)">学部生向け</button>
+        <button class="tag-btn" onclick="filterCards('cat6b', event)">修士生向け</button>
+        <button class="tag-btn" onclick="filterCards('cat6c', event)">博士向け</button>
+        <button class="tag-btn" onclick="filterCards('cat6d', event)">ポスドク向け</button>
+        <button class="tag-btn" onclick="filterCards('cat7', event)">就活相談</button>
+      </div>
     </div>
 
-  </main>
+    <!-- カードリスト -->
+    <div class="card-list">
+
+      <!-- 0. イベント限定質問（優先） -->
+      <div class="card cat0">
+        <details open>
+          <summary class="card-header">
+            <div class="indicator-box"></div>
+            <div class="card-header-info">
+              <span class="category-badge priority">イベント限定質問</span>
+              <h2 class="card-title">「●●イベントだからこそ聞ける！本音・深掘り質問」</h2>
+            </div>
+            <div class="arrow-icon">▼</div>
+          </summary>
+          <div class="card-body">
+            <div class="sub-section">
+              <div class="sub-title">登壇者・現場社員へ一歩踏み込んで聞く質問</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)">
+                  <input type="checkbox">
+                  <span class="question-num">1.</span>
+                  <span class="question-text">本日の講演内容の中で特に印象的だった◯◯について、現場で最も苦労されたエピソードはありますか？</span>
+                </li>
+                <li class="question-item" onclick="toggleCheck(this, event)">
+                  <input type="checkbox">
+                  <span class="question-num">2.</span>
+                  <span class="question-text">このイベントに参加されている企業様だからこそ感じる、自社技術・サービスの最大の優位性は何ですか？</span>
+                </li>
+                <li class="question-item" onclick="toggleCheck(this, event)">
+                  <input type="checkbox">
+                  <span class="question-num">3.</span>
+                  <span class="question-text">本日のテーマに関連して、今後3〜5年で特に注力したい挑戦的なプロジェクトがあれば教えてください。</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 1. 専攻・スキル -->
+      <div class="card cat1">
+        <details>
+          <summary class="card-header">
+            <div class="indicator-box"></div>
+            <div class="card-header-info">
+              <span class="category-badge">専攻・スキル</span>
+              <h2 class="card-title">「研究経験はどう活かせる？必要なスキルは？」</h2>
+            </div>
+            <div class="arrow-icon">▼</div>
+          </summary>
+          <div class="card-body">
+            <div class="sub-section">
+              <div class="sub-title">研究経験はどう活かせる？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">大学・大学院で培った研究経験は、仕事のどのような場面で活かせますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">大学での研究と企業での仕事で、「一番大きく違う」と感じる部分はどこですか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">自分の専門性をそのまま活かすには？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">自分の専攻や研究テーマと直結する部署やプロジェクトには、どのようなものがありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">専門知識を持っていることで、入社直後からリードできる（強みになる）業務はありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">専門性をさらに深めて「技術のスペシャリスト」として活躍されている先輩の例はありますか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">専門外の分野からチャレンジするには？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">研究テーマとは異なる分野の業務に配属された場合、研究で身につけた「考え方やプロセス」は現場でどのように活用されていますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">自分の専攻とは少し離れた領域に挑戦する際、どのようなキャッチアップやキャッチアップのためのサポートがありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">実際に「学生時代の専攻とは異なる部署」で活躍されている先輩社員の方はどのような工夫をされていますか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">入社前に必要なスキルは？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">入社前に身につけておくと役立つ知識やスキルはありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">入社後の研修では、どのような知識や技術を学べますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">同期や先輩で、入社時点で「このスキルがあって役に立った」という例はありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">4.</span><span class="question-text">専門知識以外に、入社後のキャッチアップや成長を早めるために重要な姿勢やマインドは何ですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">5.</span><span class="question-text">新しい技術や知識が必要になったとき、社員のみなさんはどのように学んでいますか？</span></li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 2. 会社の選び・入社の決め手 -->
+      <div class="card cat2">
+        <details>
+          <summary class="card-header">
+            <div class="indicator-box"></div>
+            <div class="card-header-info">
+              <span class="category-badge">会社選び・入社決め手</span>
+              <h2 class="card-title">「社風や社員の特徴・入社の決め手は？」</h2>
+            </div>
+            <div class="arrow-icon">▼</div>
+          </summary>
+          <div class="card-body">
+            <div class="sub-section">
+              <div class="sub-title">社風や社員の特徴は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">御社には、どのような考え方や価値観を持つ社員が多いですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">社員同士の交流や、部署を越えたコミュニケーションの機会はありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">入社してから感じた、御社ならではの文化や雰囲気を教えてください。</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">入社の決め手や選んだ理由は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">〇〇様ご自身が、最終的に入社を決めた一番の理由（決め手）は何でしたか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">就職活動の際、他の企業と迷った点や、最終的に御社に絞った軸はありましたか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">入社前に抱いていた『会社の雰囲気やカルチャーのイメージ』と、入社後に感じた良い意味でのギャップはありましたか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">やりがいや評価されるポイントは？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">どのような仕事や成果を出したときに、一番やりがいや面白さを感じますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">御社で「この人と一緒に働きたい」「活躍している」と思われる社員にはどんな共通点がありますか？</span></li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 3. 業務内容・働き方 -->
+      <div class="card cat3">
+        <details>
+          <summary class="card-header">
+            <div class="indicator-box"></div>
+            <div class="card-header-info">
+              <span class="category-badge">業務内容・働き方</span>
+              <h2 class="card-title">「具体的な仕事内容・リアルな働き方は？」</h2>
+            </div>
+            <div class="arrow-icon">▼</div>
+          </summary>
+          <div class="card-body">
+            <div class="sub-section">
+              <div class="sub-title">具体的な仕事内容や流れは？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">入社1年目は、どのような業務を担当することが多いですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">若手社員の1日の仕事の流れを教えてください。</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">実際の業務では、個人で進める仕事とチームで進める仕事のどちらが多いですか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">入社後のギャップや生活の変化は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">入社前に想像していた『日々の働き方や業務スピード』と、実際に働いてみて違いを感じたことはありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">入社してから、働く環境や制度について魅力に感じたことは何ですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">『入社1年目の頃』に一番つまずいたことや苦労したこと、それをどう乗り越えたかを教えていただけますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">4.</span><span class="question-text">社会人になってから、生活リズムや時間の使い方はどのように変わりましたか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">キャリアや成長のイメージは？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">若手社員には、どのような成長や活躍が期待されていますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">入社3年〜5年目くらいになると、どのような役割や任され方に変わっていきますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">年数やキャリアを重ねる中で、ご自身の仕事に対する考え方はどう変化しましたか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">大変なことやサポート体制は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">これまでのキャリアの中で『一番大きな壁を感じたプロジェクトや仕事』と、それをどう乗り越えたかを教えてください。</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">業務で分からないことや困ったことがあった時、周囲に相談しやすい環境や仕組みはありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">部署のチームワークやフォロー体制で「助かった」と感じるエピソードはありますか？</span></li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 4. 選考・キャリア -->
+      <div class="card cat4">
+        <details>
+          <summary class="card-header">
+            <div class="indicator-box"></div>
+            <div class="card-header-info">
+              <span class="category-badge">選考・キャリア</span>
+              <h2 class="card-title">「選考での評価ポイント・キャリアパスは？」</h2>
+            </div>
+            <div class="arrow-icon">▼</div>
+          </summary>
+          <div class="card-body">
+            <div class="sub-section">
+              <div class="sub-title">選考での評価ポイントは？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">就職活動では、研究内容や研究成果はどの程度重視されますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">研究活動での経験（研究内容や思考プロセスなど）のうち、御社の選考で特に評価されるものは何ですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">研究テーマが事業内容と異なる場合、面接ではどのようなポイントを意識してアピールすると評価に繋がりやすいですか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">自分に合うキャリアや職種の選び方は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">自分の専門性や強みを活かせる仕事は、どのように見つければよいですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">研究職・開発職・技術職では、求められる能力や仕事内容にどのような違いがありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">採用選考の中で、企業側は学生の「適性」や「向いている職種」をどのような部分で判断していますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">4.</span><span class="question-text">入社前に希望していた仕事と、実際に向いている仕事が異なることはありますか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">面接や選考対策のアドバイスは？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">面接で学生の「人柄」や「熱意」を感じる瞬間は、具体的にどのような場面ですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">志望動機や自己PRを聞く際、面接官が特にチェックしているポイントは何ですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">「こういうアピールをする学生は印象に残る・好印象」という例があれば教えてください。</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">入社後のキャリアパスや将来像は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">将来的にどのようなキャリアパス（専門性を極める・マネジメントに進む等）を歩む社員が多いですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">社員のみなさんは、ご自身のキャリアプランをどのタイミングや方法で会社に伝えていますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">社内でのキャリアチェンジ（部署異動や職種変更）の機会や制度はありますか？</span></li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 5. 技術・研究環境 -->
+      <div class="card cat5">
+        <details>
+          <summary class="card-header">
+            <div class="indicator-box"></div>
+            <div class="card-header-info">
+              <span class="category-badge">技術・研究環境</span>
+              <h2 class="card-title">「研究設備や学会発表・事業化へのステップは？」</h2>
+            </div>
+            <div class="arrow-icon">▼</div>
+          </summary>
+          <div class="card-body">
+            <div class="sub-section">
+              <div class="sub-title">研究環境や成果発表の機会は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">大学の研究室と比べて、実験設備や解析ツールの充実度や、新しいツールを導入する際の自由度はどうですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">入社後、研究成果を学会で発表したり特許を出願したりする機会や、成果に応じた社内インセンティブはありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">試作や実験を繰り返し進める中で、失敗を許容したり次に活かしたりするような文化はありますか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">研究や開発の成果を、製品や事業に活かすには？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">基礎研究や技術開発の成果が、実際の製品やサービスとして世に出るまでにどのようなステップを踏みますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">技術者や研究者が、営業・事業開発などのビジネスサイドの部署と連携する機会はどのくらいありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">「技術的な面白さ」と「市場での売上・コスト」のバランスに悩んだ際、どのような基準で判断することが多いですか？</span></li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 6-A. 学部生向け -->
+      <div class="card cat6a">
+        <details>
+          <summary class="card-header">
+            <div class="indicator-box"></div>
+            <div class="card-header-info">
+              <span class="category-badge">学部生向け</span>
+              <h2 class="card-title">「学部卒人材への期待・評価・院進学との違いは？」</h2>
+            </div>
+            <div class="arrow-icon">▼</div>
+          </summary>
+          <div class="card-body">
+            <div class="sub-section">
+              <div class="sub-title">学部卒人材への期待や評価は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">学部卒と修士卒では、入社直後の業務内容やキャッチアップのスピードにどのような違いがありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">学部時代に学んだ専門知識や研究経験は、実際の業務でどのように活かされていますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">学部卒で入社した社員が、修士卒の同期に負けずに早い段階から成果を出すためのポイントは何ですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">4.</span><span class="question-text">学部卒と大学院卒では、入社時の待遇や昇進・評価の仕組みに違いはありますか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">院進学との比較や働き方の違いは？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">学部卒で就職することと、大学院へ進学してから就職することには、それぞれどのようなメリットがありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">学部卒で入社した社員が、大学院卒の社員と一緒に働く中で、強みを発揮できるのはどのような場面ですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">学部卒で入社した後、働きながら修士号や博士号の取得を目指すことは可能ですか？</span></li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 6-B. 修士生向け -->
+      <div class="card cat6b">
+        <details>
+          <summary class="card-header">
+            <div class="indicator-box"></div>
+            <div class="card-header-info">
+              <span class="category-badge">修士生向け</span>
+              <h2 class="card-title">「企業での研究・開発環境や修士卒のキャリアは？」</h2>
+            </div>
+            <div class="arrow-icon">▼</div>
+          </summary>
+          <div class="card-body">
+            <div class="sub-section">
+              <div class="sub-title">企業での研究・開発環境や進め方は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">大学の研究室と比べて、企業の研究開発における「成果の求められるスピード感」や「チーム体制」はどう違いますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">修士卒で入社した社員は、研究テーマの設定やプロジェクトの方針決定にどの程度関わることができますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">修士卒の社員が大学や外部研究機関との共同研究、学会発表などに携わる機会はありますか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">修士卒のキャリアパスや成長像は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">修士卒で入社した社員は、5年後・10年後にどのようなキャリアを歩んでいることが多いですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">修士で培った「技術の専門性」を強みにして、企画・事業開発などのビジネス領域へ進むキャリアパスはありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">修士卒で入社した後、働きながら博士号の取得を目指す社員や、それを支援する制度はありますか？</span></li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 6-C. 博士向け -->
+      <div class="card cat6c">
+        <details>
+          <summary class="card-header">
+            <div class="indicator-box"></div>
+            <div class="card-header-info">
+              <span class="category-badge">博士向け</span>
+              <h2 class="card-title">「博士人材への期待・処遇・企業研究への順応は？」</h2>
+            </div>
+            <div class="arrow-icon">▼</div>
+          </summary>
+          <div class="card-body">
+            <div class="sub-section">
+              <div class="sub-title">博士人材への期待や処遇は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">学部・修士卒の社員と比較して、博士修了者に期待される役割や社内評価（スタート時の等級など）にどんな違いがありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">博士課程で培った「高度な課題設定能力」や「研究プロセス」は、入社後のどのような場面で強みになると感じますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">学会での実績や研究の専門性は、入社時の配属や担当プロジェクトの選定にどの程度反映されますか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">企業研究への順応や将来像は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">アカデミアの研究から企業の事業・商品開発へ意識を切り替える際、一番重要になるマインドは何ですか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">入社後は専門性を極めるスペシャリストと、チームを率いるマネジメントのどちらのキャリアを進む方が多いですか？</span></li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 6-D. ポスドク向け -->
+      <div class="card cat6d">
+        <details>
+          <summary class="card-header">
+            <div class="indicator-box"></div>
+            <div class="card-header-info">
+              <span class="category-badge">ポスドク向け</span>
+              <h2 class="card-title">「ポスドク経験への期待・即戦力性・アカデミアからの切り替えは？」</h2>
+            </div>
+            <div class="arrow-icon">▼</div>
+          </summary>
+          <div class="card-body">
+            <div class="sub-section">
+              <div class="sub-title">ポスドク経験への期待や即戦力性は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">新卒（修士・博士）と比較して、ポスドクで積んできた研究実績や独立した研究推進力はどのように評価されますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">入社時のポストや処遇（給与・等級など）は、ポスドクとしての年数や業績がどの程度考慮されますか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">アカデミアからの切り替えや環境のギャップは？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">ポスドクから企業へ移行された先輩社員の方は、事業方針に応じたテーマ変更やスピード感の違いにどのように順応されていますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">アカデミアから企業へ移られた方が、「企業で研究・開発を行って良かった」と特に感じられている魅力は何ですか？</span></li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 7. 就活相談 -->
+      <div class="card cat7">
+        <details>
+          <summary class="card-header">
+            <div class="indicator-box"></div>
+            <div class="card-header-info">
+              <span class="category-badge">就活相談</span>
+              <h2 class="card-title">「書類・面接対策や研究と就活の両立アドバイス」</h2>
+            </div>
+            <div class="arrow-icon">▼</div>
+          </summary>
+          <div class="card-body">
+            <div class="sub-section">
+              <div class="sub-title">選考書類や研究概要の見せ方は？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">専門外の人事や面接官にも伝わる「研究概要書」を書くコツや、意識すべきポイントはありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">面接の中で、自分の研究の魅力や苦労したプロセスを短時間で分かりやすく伝える工夫はありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">これまでに見てきた学生の中で、「この研究のアピールは非常に上手だった」と感じた例はありますか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">進路や職種の選び方に迷ったら？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">自分の専門分野にこだわるか、視野を広げて異職種に挑むか迷った際、どのように判断すると納得感がありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">進学して博士に進むか、就職するか迷った際、企業で働く立場からアドバイスをいただけますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">御社の研究職・開発職・技術営業などで迷っている場合、自分に合う適性を見極めるヒントはありますか？</span></li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="sub-title">研究と就活の両立や企業選びのポイントは？</div>
+              <ul class="question-list">
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">1.</span><span class="question-text">学生時代、日々の研究活動と就職活動を両立させるためにどんな工夫をされていましたか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">2.</span><span class="question-text">ブース訪問やサイトを見る中で、企業の「本当の技術力や強み」を見極めるために見ておくと良いポイントはありますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">3.</span><span class="question-text">今日のような説明会や短時間の会話の中で、学生側のどこを一番チェックされていますか？</span></li>
+                <li class="question-item" onclick="toggleCheck(this, event)"><input type="checkbox"><span class="question-num">4.</span><span class="question-text">就活中に不安や壁を感じたとき、どのようにモチベーションを維持していましたか？</span></li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- 下部固定コピーバー -->
+  <div class="copy-bar">
+    <div class="copy-info">
+      <div class="selected-count">選択中: <strong id="count">0</strong> 件</div>
+    </div>
+    <div class="action-buttons">
+      <button class="clear-btn" onclick="clearAllSelections()">選択を全解除</button>
+      <button class="copy-btn" onclick="copyQuestions()">選択した質問をコピー</button>
+    </div>
+  </div>
 
   <script>
-    // カードのアコーディオン開閉
-    function toggleCard(button) {
-      const card = button.closest('.theme-card');
-      const content = card.querySelector('.accordion-content');
-      const chevron = button.querySelector('.chevron-icon');
+    // ジャンルでの絞り込み機能
+    function filterCards(category, event) {
+      const buttons = document.querySelectorAll('.tag-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
 
-      const isHidden = content.classList.contains('hidden');
-
-      if (isHidden) {
-        content.classList.remove('hidden');
-        chevron.style.transform = 'rotate(180deg)';
-        card.classList.add('ring-2', 'ring-teal-500/20', 'border-teal-400');
-      } else {
-        content.classList.add('hidden');
-        chevron.style.transform = 'rotate(0deg)';
-        card.classList.remove('ring-2', 'ring-teal-500/20', 'border-teal-400');
-      }
-    }
-
-    // カテゴリフィルター
-    function filterCategory(category, button) {
-      const buttons = document.querySelectorAll('.filter-btn');
-      buttons.forEach(btn => {
-        btn.classList.remove('bg-teal-600', 'text-white', 'shadow-sm');
-        btn.classList.add('bg-slate-100', 'text-slate-600');
-      });
-
-      button.classList.remove('bg-slate-100', 'text-slate-600');
-      button.classList.add('bg-teal-600', 'text-white', 'shadow-sm');
-
-      const cards = document.querySelectorAll('.theme-card');
+      const cards = document.querySelectorAll('.card');
       cards.forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
+        if (category === 'all' || card.classList.contains(category)) {
           card.style.display = 'block';
         } else {
           card.style.display = 'none';
@@ -494,63 +901,58 @@
       });
     }
 
-    // 質問テキストのワンタップコピー機能 (ExecCommand fallback with modern clipboard API)
-    function copyQuestion(button) {
-      const box = button.closest('.question-box');
-      const text = box.querySelector('p').innerText.trim();
-
-      if (!text || text.startsWith('？')) return;
-
-      if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(text).then(() => {
-          onCopySuccess(button);
-        }).catch(() => {
-          fallbackCopyText(text, button);
-        });
+    // 質問行のクリック操作とカウント更新
+    function toggleCheck(item, event) {
+      const checkbox = item.querySelector('input[type="checkbox"]');
+      if (event.target !== checkbox) {
+        checkbox.checked = !checkbox.checked;
+      }
+      if (checkbox.checked) {
+        item.classList.add('selected');
       } else {
-        fallbackCopyText(text, button);
+        item.classList.remove('selected');
       }
+      updateCount();
     }
 
-    function fallbackCopyText(text, button) {
-      const textArea = document.createElement("textarea");
-      textArea.value = text;
-      textArea.style.position = "fixed";
-      textArea.style.left = "-9999px";
-      document.body.appendChild(textArea);
-      textArea.focus();
-      textArea.select();
-      try {
-        document.execCommand('copy');
-        onCopySuccess(button);
-      } catch (err) {
-        console.error('コピーに失敗しました', err);
+    // 選択件数のカウント更新
+    function updateCount() {
+      const checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
+      document.getElementById('count').textContent = checkedBoxes.length;
+    }
+
+    // 選択を一括全解除する機能
+    function clearAllSelections() {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(cb => {
+        cb.checked = false;
+        cb.closest('.question-item').classList.remove('selected');
+      });
+      updateCount();
+    }
+
+    // 選択した質問をコピーする機能
+    function copyQuestions() {
+      const checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
+      if (checkedBoxes.length === 0) {
+        alert('質問が選択されていません。質問を選んでからコピーを押してください。');
+        return;
       }
-      document.body.removeChild(textArea);
-    }
 
-    function onCopySuccess(button) {
-      showToast();
-      const icon = button.querySelector('i');
-      icon.className = 'fa-solid fa-check text-teal-600';
-      setTimeout(() => {
-        icon.className = 'fa-regular fa-copy';
-      }, 1500);
-    }
+      let copyText = '';
+      checkedBoxes.forEach((cb, index) => {
+        const item = cb.closest('.question-item');
+        const text = item.querySelector('.question-text').textContent;
+        copyText += `${index + 1}. ${text}\n`;
+      });
 
-    // トースト表示
-    let toastTimeout;
-    function showToast() {
-      const toast = document.getElementById('copyToast');
-      toast.classList.remove('toast-active');
-      void toast.offsetWidth; // リフロー発生
-      toast.classList.add('toast-active');
-
-      clearTimeout(toastTimeout);
-      toastTimeout = setTimeout(() => {
-        toast.classList.remove('toast-active');
-      }, 2200);
+      navigator.clipboard.writeText(copyText).then(() => {
+        alert(`${checkedBoxes.length} 件の質問をコピーしました！チャットやメモ帳に貼り付けてご活用ください。`);
+      }).catch(() => {
+        alert('コピーに失敗しました。お使いのブラウザの権限をご確認ください。');
+      });
     }
   </script>
+
 </body>
 </html>
